@@ -18,22 +18,20 @@
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap:30px;
     }
 
-    .item img {
-      width: 100%;
+    .gallery img {
+      max-width: 90%;
       height: auto;
       border-radius: 12px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.3s;
     }
 
-    .item img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    .gallery img:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
